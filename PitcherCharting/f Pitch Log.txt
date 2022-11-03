@@ -1,0 +1,7 @@
+For #2 f (2, f):
+f's thrown: 1 (100.0% strikes)
+
+Strike percentage: 100.0% (1/1)
+
+Pitch Log:
+Middle-Middle f for a Strike

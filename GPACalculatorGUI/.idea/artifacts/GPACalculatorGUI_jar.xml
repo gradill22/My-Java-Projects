@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GPACalculatorGUI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GPACalculatorGUI_jar</output-path>
+    <root id="archive" name="GPACalculatorGUI.jar">
+      <element id="module-output" name="GPACalculatorGUI" />
+    </root>
+  </artifact>
+</component>

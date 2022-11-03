@@ -1,0 +1,8 @@
+Starting balance: $100.00
+
+All transactions:
+1) -$30.00
+2) $70.00
+3) -$40.00
+
+Calculated Ending Balance: $100.00

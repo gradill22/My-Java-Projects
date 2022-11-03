@@ -1,0 +1,4 @@
+Johnny, 35, true, 3902.34
+Spencer, 69, false, 2000.71
+James, 5, true, 12.379
+Grady, 25, false, 1598.27

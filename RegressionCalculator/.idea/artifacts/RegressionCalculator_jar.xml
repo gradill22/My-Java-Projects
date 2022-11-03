@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RegressionCalculator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RegressionCalculator_jar</output-path>
+    <root id="archive" name="RegressionCalculator.jar">
+      <element id="module-output" name="RegressionCalculator" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PitcherCharting:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PitcherCharting_jar</output-path>
+    <root id="archive" name="PitcherCharting.jar">
+      <element id="module-output" name="PitcherCharting" />
+    </root>
+  </artifact>
+</component>

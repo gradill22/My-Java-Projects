@@ -1,0 +1,24 @@
+For #22 Grady Dillon (18, FTB):
+Fastball's thrown: 1 (100.0% strikes)
+Slider's thrown: 1 (100.0% strikes)
+Changeup's thrown: 1 (100.0% strikes)
+
+Strike percentage: 100.0% (3/3)
+
+Pitch Log:
+HIGH INSIDE Fastball for a STRIKE
+LOW OUTSIDE Slider for a STRIKE
+LOW INSIDE Changeup for a STRIKE
+
+<><><><><><><><><><><><><><><><><><>
+
+For #69 James Mills (17, Cubs):
+Fastball's thrown: 1 (100.0% strikes)
+Curveball's thrown: 2 (100.0% strikes)
+
+Strike percentage: 100.0% (3/3)
+
+Pitch Log:
+HIGH INSIDE Fastball for a STRIKE
+LOW OUTSIDE Curveball for a STRIKE
+LOW INSIDE Curveball for a STRIKE

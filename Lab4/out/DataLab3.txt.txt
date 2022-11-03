@@ -1,0 +1,4 @@
+Johnny, 34, false, 1933.53
+Bob, 35, true, 2984.28
+George, 26, false, 1830.32
+Michael, 17, true, 125.71

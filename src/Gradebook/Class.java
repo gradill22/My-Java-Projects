@@ -32,9 +32,6 @@ public class Class {
     }
 
     public String letterGrade() {
-        if(grades.size() == 0) {
-            return "N/A";
-        }
         float grade = numberGrade();
         if(grade >= 93) {
             return "A";
@@ -145,7 +142,7 @@ public class Class {
     }
 
     public String formattedGrade() {
-        return "%s (%.2f)".formatted(letterGrade(), numberGrade());
+        return String.format("%s (%.2f)", letterGrade(), numberGrade());
     }
 
     public int getGradeTypeIndex(String gradeType) {

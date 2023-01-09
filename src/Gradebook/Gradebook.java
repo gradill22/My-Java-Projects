@@ -6,7 +6,8 @@ import java.awt.event.*;
 import java.io.*;
 import java.util.ArrayList;
 
-public class Gradebook extends JPanel {
+public class Gradebook extends JPanel
+{
     private static JFrame frame, newClassInfo, newGradeType;
     private static JPanel addOrRemovePanel;
     private static JTextField courseName, courseCredits, gradeTypeName, gradeTypeWeight;

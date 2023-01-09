@@ -22,7 +22,6 @@ public class Class {
 
     public float numberGrade() {
         float sumGrades = 0;
-        System.out.println("FROM " + getClassName().toUpperCase());
         for(Grade g : grades) {
             float grade = g.getGrade();
             float weight = g.getWeight();

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e8816ba8-7b1c-4b20-af3d-f2c669665596" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hxfEzOSS0g2WjNYotIs30uQfjQ" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Animals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Animals.Animals" />
+      <module name="Animals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Animals.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Animals" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8816ba8-7b1c-4b20-af3d-f2c669665596" name="Default Changelist" comment="" />
+      <created>1600957559593</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600957559593</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="527" y="231" key="FileChooserDialogImpl" timestamp="1605801235925">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/-2736.0.1368.892/0.0.1920.1040@0.0.1920.1040" timestamp="1603807199980" />
+    <state x="527" y="231" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1605801235925" />
+    <state width="1326" height="225" key="GridCell.Tab.0.bottom" timestamp="1611243718618">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1877" height="280" key="GridCell.Tab.0.bottom/-2736.0.1368.892/0.0.1920.1040@0.0.1920.1040" timestamp="1606757734411" />
+    <state width="1326" height="225" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1611243718618" />
+    <state width="1326" height="225" key="GridCell.Tab.0.center" timestamp="1611243718618">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1877" height="280" key="GridCell.Tab.0.center/-2736.0.1368.892/0.0.1920.1040@0.0.1920.1040" timestamp="1606757734411" />
+    <state width="1326" height="225" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1611243718618" />
+    <state width="1326" height="225" key="GridCell.Tab.0.left" timestamp="1611243718617">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1877" height="280" key="GridCell.Tab.0.left/-2736.0.1368.892/0.0.1920.1040@0.0.1920.1040" timestamp="1606757734411" />
+    <state width="1326" height="225" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1611243718617" />
+    <state width="1326" height="225" key="GridCell.Tab.0.right" timestamp="1611243718618">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1877" height="280" key="GridCell.Tab.0.right/-2736.0.1368.892/0.0.1920.1040@0.0.1920.1040" timestamp="1606757734411" />
+    <state width="1326" height="225" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1611243718618" />
+    <state x="551" y="140" key="new project wizard" timestamp="1602770886444">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="551" y="140" key="new project wizard/-2736.0.1368.892/0.0.1920.1040@0.0.1920.1040" timestamp="1602770886444" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Animals$Animals.ic" NAME="Animals Coverage Results" MODIFIED="1600958968286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Animals.*</FILTER>
+    </SUITE>
+  </component>
+</project>

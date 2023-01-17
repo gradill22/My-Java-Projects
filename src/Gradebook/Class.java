@@ -20,18 +20,19 @@ public class Class {
         setCredits(credits);
     }
 
-    public float numberGrade() {
-        float sumGrades = 0;
+    private float numberGrade() {
+        float sumGrades = 0, sumWeights = 0, grade, weight, count;
         for(Grade g : grades) {
-            float grade = g.getGrade();
-            float weight = g.getWeight();
-            int count = gradeTypesCount(g.getGradeType());
+            grade = g.getGrade() * 100;
+            weight = g.getWeight();
+            count = gradeTypesCount(g.getGradeType());
             sumGrades += grade * weight / count;
+            sumWeights += weight / count;
         }
-        return sumGrades;
+        return sumWeights > 0 ? sumGrades / sumWeights : 0;
     }
 
-    public String letterGrade() {
+    private String letterGrade() {
         float grade = numberGrade();
         if(grade >= 93) {
             return "A";
@@ -155,11 +156,11 @@ public class Class {
     }
 
     private int gradeTypesCount(String gradeType) {
-        int sum = 0;
+        int count = 0;
         for(Grade g : grades) {
-            sum += g.getGradeType().equals(gradeType) ? 1 : 0;
+            count += g.getGradeType().equals(gradeType) ? 1 : 0;
         }
-        return sum;
+        return count;
     }
 
     public String[] getGradeTypes() {

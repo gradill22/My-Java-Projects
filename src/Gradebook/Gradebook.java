@@ -43,15 +43,7 @@ public class Gradebook extends JPanel
         addClass = new JButton("Add Class");
         addClass.addActionListener(new AddClassListener());
         add(addClass);
-        float gpaScore = 0;
-        float totalHours = 0;
-        for(Class c : classes) {
-            if(c.getGrades().size() > 0) {
-                gpaScore += c.GPAScore() * c.getCredits();
-                totalHours += c.getCredits();
-            }
-        }
-        GPA = new JLabel("Current GPA: %.3f".formatted(gpaScore / totalHours));
+        GPA = new JLabel(String.format("Current GPA: %.3f", GPAScore()));
         add(GPA);
     }
 
@@ -114,7 +106,7 @@ public class Gradebook extends JPanel
         }
     }
 
-    private static void readData(String[] lines) {
+    private static void parseData(String[] lines) {
         int numClasses = Integer.parseInt(lines[0]);
         IndexStream lineIndex = new IndexStream();
         String[] nameAndCredit, gradeTypeNames, gradeTypeInfo, gradeInfo;
@@ -201,7 +193,7 @@ public class Gradebook extends JPanel
                 lines = newLines;
                 line = br.readLine();
             }
-            readData(lines);
+            parseData(lines);
         } catch(IOException e) {
             e.printStackTrace();
         }
@@ -517,6 +509,18 @@ public class Gradebook extends JPanel
         while(list.size() > 0) {
             list.remove(0);
         }
+    }
+
+    private static float GPAScore() {
+        float gpaScore = 0;
+        float totalHours = 0;
+        for(Class c : classes) {
+            if(c.getGrades().size() > 0) {
+                gpaScore += c.GPAScore() * c.getCredits();
+                totalHours += c.getCredits();
+            }
+        }
+        return totalHours > 0 ? gpaScore / totalHours : 0;
     }
 
     private static class Close implements WindowListener {

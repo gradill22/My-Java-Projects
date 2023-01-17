@@ -28,7 +28,7 @@ Exams/Fiction Exam/84.500-100.000
 Essays/Fiction Essay/68.000-100.000
 Other/Poetry Exercises/4.000-4.000
 Exams/Poetry Exam/78.000-100.000
-Exams/Poetry Essay/90.000-100.000
+Essays/Poetry Essay/90.000-100.000
 Other/Drama Exercises/4.000-4.000
 Essays/Drama Essay/86.000-100.000
 Exams/Drama Exam/82.000-100.000

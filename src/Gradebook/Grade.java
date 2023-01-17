@@ -4,9 +4,9 @@ public class Grade extends GradeType {
     private String name;
     private float points, maxPoints;
 
-    public Grade(String gradeType, float gradeWeight, String readGrade) {
+    public Grade(String gradeType, float gradeWeight, String parseGrade) {
         super(gradeType, gradeWeight);
-        String[] gradeInfo = readGrade.split("/");
+        String[] gradeInfo = parseGrade.split("/");
         setName(gradeInfo[1]);
         String[] grade = gradeInfo[2].split("-");
         setPoints(Float.parseFloat(grade[0]));

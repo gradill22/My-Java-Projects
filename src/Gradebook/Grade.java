@@ -20,6 +20,13 @@ public class Grade extends GradeType {
         setMaxPoints(0);
     }
 
+    public Grade() {
+        super("", 100);
+        setName("");
+        setPoints(0);
+        setMaxPoints(0);
+    }
+
     public float getPoints() {
         return points;
     }
@@ -37,7 +44,7 @@ public class Grade extends GradeType {
     }
 
     public float getGrade() {
-        return maxPoints > 0 ? points / maxPoints : 0;
+        return maxPoints > 0 ? points * 100 / maxPoints : 0;
     }
 
     public String getName() {

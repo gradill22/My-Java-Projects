@@ -21,9 +21,11 @@ public class Class {
     }
 
     private float numberGrade() {
-        float sumGrades = 0, sumWeights = 0, grade, weight, count;
+        float sumGrades = 0;
+        float sumWeights = 0;
+        float grade, weight, count;
         for(Grade g : grades) {
-            grade = g.getGrade() * 100;
+            grade = g.getGrade();
             weight = g.getWeight();
             count = gradeTypesCount(g.getGradeType());
             sumGrades += grade * weight / count;
@@ -115,7 +117,7 @@ public class Class {
     }
 
     public Grade getGrade(int index) {
-        return grades.get(index);
+        return grades.size() > 0 ? grades.get(index) : new Grade();
     }
 
     public ArrayList<Grade> getGrades() {
@@ -123,7 +125,7 @@ public class Class {
     }
 
     public GradeType getGradeType(int index) {
-        return gradeTypes.get(index);
+        return gradeTypes.size() > 0 ? gradeTypes.get(index) : new GradeType();
     }
 
     public String getClassName() {

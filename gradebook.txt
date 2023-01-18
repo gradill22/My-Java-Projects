@@ -1,40 +1,26 @@
 5
-Calculus I|4
-2
-Assessments/80.00
-Homework/20.00
-3
-Assessments/Test #1/28.000-30.000
-Homework/Homework #1/24.000-25.000
-Homework/Homework #2/20.000-20.000
-Intro to Networking|3
-0
-0
-Data Structures|3
-0
-0
-World Civilizations II|3
-0
-0
-Writing About Literature|3
-4
-Essays/30.00
-Exams/30.00
-Research Project/25.00
-Other/25.00
-15
-Other/Fiction Exercises/6.000-6.000
-Exams/Fiction Exam/84.500-100.000
-Essays/Fiction Essay/68.000-100.000
-Other/Poetry Exercises/4.000-4.000
-Exams/Poetry Exam/78.000-100.000
-Essays/Poetry Essay/90.000-100.000
-Other/Drama Exercises/4.000-4.000
-Essays/Drama Essay/86.000-100.000
-Exams/Drama Exam/82.000-100.000
-Other/RP Exercises/1.000-1.000
-Research Project/Proposal with Bibliography/25.000-25.000
-Research Project/Annotation 1/10.000-10.000
-Research Project/Draft Essay and Peer Review/25.000-25.000
-Research Project/Final Presentation/48.000-50.000
-Research Project/Final Research Paper/89.000-100.000
+Math|4
+1
+Final Grade/100.00
+1
+Final Grade/Final Grade/88.000-100.000
+Science|3
+1
+Final Grade/100.00
+1
+Final Grade/Final Grade/73.000-100.000
+Computer Lab|3
+1
+Final Grade/100.00
+1
+Final Grade/Final Grade/99.000-100.000
+History|3
+1
+Final Grade/100.00
+1
+Final Grade/Final Grade/82.000-100.000
+English|3
+1
+Final Grade/100.00
+1
+Final Grade/Final Grade/89.000-100.000

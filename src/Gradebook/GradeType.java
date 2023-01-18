@@ -9,6 +9,11 @@ public class GradeType {
         setWeight(weight);
     }
 
+    public GradeType() {
+        setGradeType("");
+        setWeight(100);
+    }
+
     public String getGradeType() {
         return gradeType;
     }

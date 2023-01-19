@@ -42,7 +42,7 @@ public class Class {
     }
 
     public Grade getGrade(int index) {
-        return grades.size() > 0 ? grades.get(index) : new Grade();
+        return grades.size() > 0 && gradeTypes.size() > 0 ? grades.get(index) : new Grade();
     }
 
     public void addGrade(Grade grade) {
@@ -68,11 +68,10 @@ public class Class {
         return gradeTypes.size() > 0 ? gradeTypes.get(index) : new GradeType();
     }
 
-    public void removeGradeType(String gradeType) {
-        if(getGradeTypeIndex(gradeType) == -1) {  // stop function if the gradeType isn't in the gradeTypes list
-            return;
+    public void removeGradeType(int index) {
+        if(index >= 0 && index < gradeTypes.size()) {
+            gradeTypes.remove(index);
         }
-        gradeTypes.remove(getGradeTypeIndex(gradeType));
     }
 
     public void addGradeType(GradeType newGradeType) {
@@ -101,7 +100,7 @@ public class Class {
 
     // This returns the decimal (float) representation of the class' overall grade
     private float numberGrade() {
-        if(grades.size() == 0) {  // if there are no grades, just return -1
+        if(grades.size() == 0 || gradeTypes.size() == 0) {  // if there are no grades, just return -1
             return -1;
         }
         float sumGrades = 0;

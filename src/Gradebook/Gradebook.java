@@ -12,7 +12,7 @@ public class Gradebook extends JPanel
     private static JFrame frame, newClassInfo, newGradeType;
     private static JPanel addOrRemovePanel;
     private static JTextField courseName, courseCredits, gradeTypeName, gradeTypeWeight;
-    private static JButton addClass, addGrade, back, viewEnter, editEnter, gradeTypeEnter;
+    private static JButton addClass, addGrade, back, viewEnter, editEnter, gradeTypeEnter, addGradeType, removeGradeType;
     private static JComboBox<String> tempGradeType;
     private static JLabel GPA;
     private static final ArrayList<Class> classes = new ArrayList<>();
@@ -186,12 +186,12 @@ public class Gradebook extends JPanel
                 addGrade.addActionListener(new AddGradeListener());
                 add(addGrade);
             }
-            JButton addGradeType = new JButton("Add Grade Type");
+            addGradeType = new JButton("Add Grade Type");
             addGradeType.addActionListener(new AddGradeTypeListener());
             if(c.getGradeTypes().length > 0) {
                 addOrRemovePanel = new JPanel();
                 addOrRemovePanel.setLayout(new GridLayout(1, 2));
-                JButton removeGradeType = new JButton("Remove Grade Type");
+                removeGradeType = new JButton("Remove Grade Type");
                 removeGradeType.addActionListener(new RemoveGradeTypeListener());
                 addOrRemovePanel.add(addGradeType);
                 addOrRemovePanel.add(removeGradeType);
@@ -487,7 +487,7 @@ public class Gradebook extends JPanel
         gradeTypeEnter = new JButton("Enter");
         gradeTypeEnter.addActionListener(setting == 1 ? new AddGradeTypeGUIListener() : new RemoveGradeTypeGUIListener());
         JButton cancel = new JButton("Cancel");
-        cancel.addActionListener(setting == 1 ? new AddGradeTypeGUIListener() : new RemoveGradeTypeGUIListener());
+        cancel.addActionListener(gradeTypeEnter.getActionListeners()[0]);
         newGradeType.add(info);
         newGradeType.add(gtn);
         if(setting == 1) {
@@ -515,9 +515,24 @@ public class Gradebook extends JPanel
             if(e.getSource() == gradeTypeEnter) {
                 GradeType newGradeType = new GradeType(gradeTypeName.getText(), Float.parseFloat(gradeTypeWeight.getText()));
                 for(JComboBox<String> gradeType : gradeTypes) {
-                    gradeType.addItem(newGradeType.getGradeType());
+                    gradeType.addItem(newGradeType.formattedGradeType());
                 }
                 classes.get(currentClassIndex).addGradeType(newGradeType);
+                if(classes.get(currentClassIndex).getGradeTypes().length == 1) {
+                    frame.remove(addGradeType);
+                    frame.remove(back);
+                    addOrRemovePanel = new JPanel(new GridLayout(1, 2));
+                    removeGradeType = new JButton("Remove Grade Type");
+                    removeGradeType.addActionListener(new RemoveGradeTypeListener());
+                    addOrRemovePanel.add(addGradeType);
+                    addOrRemovePanel.add(removeGradeType);
+                    addGrade = new JButton("Add Grade");
+                    addGrade.addActionListener(new AddGradeListener());
+                    frame.add(addGrade);
+                    frame.add(addOrRemovePanel);
+                    back.addActionListener(new BackListener());
+                    frame.add(back);
+                }
             }
             newGradeType.setVisible(false);
             updateFrame();
@@ -532,8 +547,16 @@ public class Gradebook extends JPanel
                 for(JComboBox<String> gradeType : gradeTypes) {
                     gradeType.removeItem(element);
                 }
-                classes.get(currentClassIndex).removeGradeType(element);
+                classes.get(currentClassIndex).removeGradeType(tempGradeType.getSelectedIndex());
                 tempGradeType = null;
+                if(classes.get(currentClassIndex).getGradeTypes().length == 0) {
+                    frame.remove(addGrade);
+                    frame.remove(addOrRemovePanel);
+                    addOrRemovePanel = null;
+                    frame.remove(back);
+                    frame.add(addGradeType);
+                    frame.add(back);
+                }
             }
             newGradeType.setVisible(false);
             updateFrame();

@@ -1,5 +1,7 @@
 package Gradebook;
 
+// This class helps iterate through some kind of list by incrementing with every use
+
 public class IndexStream {
     private int index;
 
@@ -8,14 +10,14 @@ public class IndexStream {
     }
 
     public int next() {
-        index += 1;
-        return index;
+        return ++index;
     }
 
     public int currentIndex() {
         return index;
     }
 
+    // Test toString() method
     public String toString() {
         return String.format("Index: %d", currentIndex());
     }

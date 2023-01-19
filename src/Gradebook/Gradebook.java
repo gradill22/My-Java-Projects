@@ -370,11 +370,12 @@ public class Gradebook extends JPanel
     // This is the listener that allows the user to go back to the main screen after viewing their grades in a class
     private static class BackListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            for(int i = 0; i < classes.get(currentClassIndex).getGrades().size(); i++) {  // saves all current grades
-                classes.get(currentClassIndex).getGrade(i).setName(gradeNames.get(i).getText());
-                classes.get(currentClassIndex).getGrade(i).setGradeType(String.valueOf(gradeTypes.get(i).getSelectedItem()));
-                classes.get(currentClassIndex).getGrade(i).setPoints(Float.parseFloat(gradeScores.get(i).getText()));
-                classes.get(currentClassIndex).getGrade(i).setMaxPoints(Float.parseFloat(gradeMaxScores.get(i).getText()));
+            Class currentClass = classes.get(currentClassIndex);
+            for(int i = 0; i < currentClass.getGrades().size(); i++) {  // saves all current grades
+                currentClass.getGrade(i).setName(gradeNames.get(i).getText());
+                currentClass.getGrade(i).setGradeType(currentClass.getGradeType(gradeTypes.get(i).getSelectedIndex()).getGradeType());
+                currentClass.getGrade(i).setPoints(Float.parseFloat(gradeScores.get(i).getText()));
+                currentClass.getGrade(i).setMaxPoints(Float.parseFloat(gradeMaxScores.get(i).getText()));
             }
             removeAll(gradeNames);
             while(gradeTypes.size() > 0) {

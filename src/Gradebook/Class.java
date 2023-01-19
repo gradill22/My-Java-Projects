@@ -120,7 +120,9 @@ public class Class {
     // This returns the letter (String) representation of a class' overall grade
     private String letterGrade() {
         float grade = numberGrade();
-        if(grade >= 93) {
+        if(grade > 100) {
+            return "A+";
+        } else if(grade >= 93) {
             return "A";
         } else if(grade >= 90) {
             return "A-";

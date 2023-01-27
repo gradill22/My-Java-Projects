@@ -52,6 +52,13 @@ public class Gradebook extends JPanel
                 line = br.readLine();
             }
             parseData(lines);
+        } catch(FileNotFoundException e) {
+            try {
+                if(file.createNewFile()) System.out.println("New file created!");
+                main(new String[0]);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         } catch(IOException e) {
             e.printStackTrace();
         }
